@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package agent;
 
-option go_package = "github.com/PipeOpsHQ/pipeops-k8-operator/internal/controller/agent";
+option go_package = "github.com/PipeOpsHQ/grpc-server/internal/agent";
 
 service AgentService {
   rpc Authenticate(AuthRequest) returns (AuthResponse);
