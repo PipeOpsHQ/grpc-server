@@ -200,7 +200,7 @@ func (s *server) startBroadcaster() {
 }
 
 func main() {
-	listener, err := net.Listen("tcp", ":50054")
+	listener, err := net.Listen("tcp", "0.0.0.0:50054")
 	if err != nil {
 		log.Fatalf("Failed to listen on port 50054: %v", err)
 	}
